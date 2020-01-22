@@ -1,1 +1,7 @@
-<p>signup works!</p>
+<div>
+    <h1>Welcome to my project {{title}}!</h1>
+    <input [(ngModel)]="register.username" placeholder="username">
+    <input [(ngModel)]="register.password" type="password" placeholder="password">
+    <input [(ngModel)]="register.email" placeholder="email">
+    <button (click)='registerUser()'>register</button>
+  </div>
