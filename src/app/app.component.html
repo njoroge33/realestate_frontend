@@ -1,4 +1,13 @@
-<h1>
-  {{title}}
-  <app-signup></app-signup>
-</h1>
+<div class="container-fluid">
+  <div class="navbar bg-danger">
+    <div>
+      <h1>Homes</h1>
+    </div>
+    <div class="ml-auto row">
+      <a class="nav-item nav-link btn btn-light" routerLink="/home">home</a>
+      <a class="nav-item nav-link btn btn-light" routerLink="/signup"> signup</a>
+      <a class="nav-item nav-link btn btn-light" routerLink="/login">login</a>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>
