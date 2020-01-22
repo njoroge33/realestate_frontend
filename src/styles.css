@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
+@import url('https://fonts.googleapis.com/css?family=Monoton&display=swap');
 
 img {
     height: 90vh;
@@ -9,7 +10,7 @@ img {
 .main-text
 {
     position: absolute;
-    top: 50px;
+    top: 90px;
     width: 96.66666666666666%;
     color: #FFF;
 }
@@ -20,13 +21,19 @@ img {
 }
 .btn-clear
 {
-    color: #FFF;
-    background-color: transparent;
+    color: black;
+    background-color: #FFF;
     border-color: #FFF;
     margin-right: 15px;
 }
 .btn-clear:hover
 {
     color: #000;
-    background-color: #FFF;
+    background-color: #DC3F45;
+}
+
+h2 {
+    font-family: 'Monoton', cursive;
+    font-size: 35px;
+    color: white;
 }
