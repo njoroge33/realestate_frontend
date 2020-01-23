@@ -34,9 +34,15 @@
                     The best and easiest way to own a quality home at a cheap price.
                 </h3>
                 <div class="">
-                    <a class="btn btn-clear btn-sm btn-min-block" routerLink="/login">Login</a><a class="btn btn-clear btn-sm btn-min-block"
-                    routerLink="/signup">Registration</a> 
-                    <a class="btn btn-clear btn-sm btn-min-block btn2" routerLink="/newpost">New Post</a></div>
+                        <a *ngIf="loggedin;" class="btn btn-clear btn-sm btn-min-block" routerLink="/newpost">New Post</a>
+                        <a *ngIf="loggedin;" class="btn btn-clear btn-sm btn-min-block" (click)='doLogout()'>Logout</a>
+                        <a *ngIf="!loggedin;" class="btn btn-clear btn-sm btn-min-block" routerLink="/login">Login</a>
+                    <a class="btn btn-clear btn-sm btn-min-block btn2"
+                    routerLink="/signup">Register</a> 
+                    
+                    <ng-template #loggedOut>
+                        
+                      </ng-template>
             </div>
         </div> 
     </div>  
