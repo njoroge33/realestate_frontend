@@ -1,0 +1,21 @@
+<div class="container" style="margin-top: 5%;">
+    <div class="container card">
+        <h1 class="text-center">Post a Home</h1>
+        <label>House image: </label>
+        <input type='file' (change)="onSelectFile($event)"><br>
+        <label>Description: </label>
+        <input [(ngModel)]="description" placeholder="description"><br>
+        <label>Location: </label>
+        <input [(ngModel)]="location" placeholder="location"><br>
+        <label>Bedrooms: </label>
+        <input [(ngModel)]="bedrooms_no" placeholder="bedrooms"><br>
+        <label>Bathrooms: </label>
+        <input [(ngModel)]="bathrooms_no" placeholder="bathrooms"><br>
+        <label>Plot size:</label>
+        <input [(ngModel)]="plot_size" placeholder="plot size"><br>
+        <label>Cost: </label>
+        <input [(ngModel)]="cost" placeholder="cost"><br>
+        <button class="btn btn-sm btn-success" style="width: 10%;" (click)='createNewPost()'>post</button>
+    </div>
+    
+  </div>

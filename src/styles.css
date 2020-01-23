@@ -10,9 +10,11 @@ img {
 .main-text
 {
     position: absolute;
-    top: 90px;
+    top: 100px;
     width: 96.66666666666666%;
-    color: #FFF;
+    background-color: rgba(255,255,255,0.7);
+    padding-bottom: 10%;
+    padding-top: 5%;
 }
 .btn-min-block
 {
@@ -37,3 +39,24 @@ h2 {
     font-size: 35px;
     color: white;
 }
+
+.cord:hover{
+    -webkit-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
+    box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
+  }
+
+input{
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+.card>.btn, label{
+    margin-left: 20%; 
+}
+
+@media only screen and (max-width: 639px) {
+    .btn2 {
+      margin-top:5%;
+    }
+  }
