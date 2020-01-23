@@ -11,4 +11,8 @@ export class UserService {
   registerNewUser(userData) {
     return this.http.post('http://127.0.0.1:8000/api/users/', userData)
   }
+
+  getPost() {
+    return this.http.get('http://127.0.0.1:8000/api/posts/')
+  }
 }
