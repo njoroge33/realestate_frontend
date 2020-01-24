@@ -9,20 +9,20 @@ export class UserService {
   constructor(private http: HttpClient ) { }
 
   registerNewUser(userData) {
-    return this.http.post('http://127.0.0.1:8000/api/users/', userData)
+    return this.http.post('https://estateserver.herokuapp.com/apiusers/', userData)
   }
 
   loginUser(userData) {
-    return this.http.post('http://127.0.0.1:8000/api/auth/', userData)
+    return this.http.post('https://estateserver.herokuapp.com/api/auth/', userData)
   }
 
   
   newPost(post) {
-    return this.http.post('http://127.0.0.1:8000/api/posts/', post)
+    return this.http.post("https://estateserver.herokuapp.com/api/posts/", post)
   }
 
   getPost() {
-    return this.http.get('http://127.0.0.1:8000/api/posts/')
+    return this.http.get("https://estateserver.herokuapp.com/api/posts/")
   }
 
   getToken() {

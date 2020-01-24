@@ -1,6 +1,17 @@
-<div>
-    <h1>Welcome to my project {{title}}!</h1>
-    <input [(ngModel)]="login.username" placeholder="username">
-    <input [(ngModel)]="login.password" type="password" placeholder="password">
-    <button (click)='onLogin()'>login</button>
-  </div>
+<div class="container" style="margin-top: 10%;">
+    <div class="container card">
+        <h1 class="text-center">Login</h1>
+        <label>Username: </label>
+        <input [(ngModel)]="login.username" placeholder="username">
+        <label>Password: </label>
+        <input [(ngModel)]="login.password" type="password" placeholder="password">
+
+        <div class="row" style="margin-top: 2%;margin-bottom: 2%;">
+            <div class="col-4">
+
+            </div>
+            <button class="btn btn-sm btn-success col-2 col-lg-1" style="width: 10%;" (click)='onLogin()'>Login</button>
+            <p class="col-4">Create an account?<a routerLink="/signup" style="color: blue;">Signup</a></p>
+        </div>
+    </div>
+</div>

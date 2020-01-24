@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from 'src/app/services/user.service';
 import { Router } from '@angular/router';
+import * as jwt_decode from 'jwt-decode';
+import jwtHelper from 'angular-jwt';
 
 @Component({
   selector: 'app-login',
