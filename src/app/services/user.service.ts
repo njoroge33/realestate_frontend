@@ -9,7 +9,7 @@ export class UserService {
   constructor(private http: HttpClient ) { }
 
   registerNewUser(userData) {
-    return this.http.post('https://estateserver.herokuapp.com/apiusers/', userData)
+    return this.http.post('https://estateserver.herokuapp.com/api/users/', userData)
   }
 
   loginUser(userData) {
